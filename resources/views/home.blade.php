@@ -76,7 +76,6 @@
         <blockquote class="mt-6 text-2xl font-medium leading-relaxed text-stone-100 sm:text-3xl">
             "{{ $site['home_vision_text'] ?? '' }}"
         </blockquote>
-        <img src="{{ asset('img/ueb/muebles_habana.svg') }}" alt="" class="mx-auto mt-10 h-24 w-auto opacity-60">
     </div>
 </section>
 

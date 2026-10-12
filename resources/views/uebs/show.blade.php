@@ -63,7 +63,7 @@
         <div class="md:col-span-2">
             @if ($ueb->content)
                 <div class="max-w-none space-y-4 leading-relaxed text-stone-600">
-                    {!! $ueb->content !!}
+                    {!! \App\Support\HtmlSanitizer::clean($ueb->content) !!}
                 </div>
             @endif
 

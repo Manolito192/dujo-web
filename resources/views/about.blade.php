@@ -10,7 +10,7 @@
     <img src="{{ asset('img/photos/quienes-somos.jpg') }}" alt="Producción de muebles DUJO" class="aspect-[16/8] w-full rounded-3xl object-cover shadow-lg">
 
     <div class="mt-10 max-w-none space-y-5 leading-relaxed text-stone-600">
-        {!! $page->content !!}
+        {!! \App\Support\HtmlSanitizer::clean($page->content) !!}
     </div>
 
     <div class="mt-12 rounded-3xl bg-stone-100 p-8">
